@@ -28,9 +28,9 @@ const checkNumber = function(num) {
   const savePrimes = function (arr2) {
     let arrPrimes = [];
     for (let i = 0; i < arr2.length; i++) {
-      if (arr2[i] === 1 || arr2[i] === 2 || arr2[i] === 3) {
+      if (arr2[i] === 2 || arr2[i] === 3) {
         arrPrimes.push(arr2[i]);
-      } else if (arr2[i] % 2 > 0 && arr2[i] % 3 > 0) {
+      } else if (arr2[i] > 3 && arr2[i] % 2 > 0 && arr2[i] % 3 > 0) {
         arrPrimes.push(arr2[i]);
       }
     }
